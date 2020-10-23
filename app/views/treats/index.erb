@@ -1,0 +1,7 @@
+<h1>Treats!</h1>
+
+<% @treats.each do |treat| %>
+  <p><b><%= treat.name %></b></p>
+  <p><%= treat.rating %></p>
+  <%= image_tag treat.picture_url, class: "treat-img" %>
+<% end %>
