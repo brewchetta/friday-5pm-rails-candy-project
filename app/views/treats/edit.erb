@@ -1,19 +1,21 @@
-<h1>Forge Your Treat!</h1>
-
-<%= form_with model: @treat do |f| %>
+<%= form_with model: @treat, class: "edit-form" do |f| %>
 
   <%= f.label :name %>
   <%= f.text_field :name %>
+  <br>
 
   <%= f.label :rating %>
   <%= f.number_field :rating, min: 0, max: 10 %>
+  <br>
 
   <%= f.label :ingredients %>
   <%= f.text_area :ingredients %>
+  <br>
 
   <%= f.label :picture_url %>
   <%= f.text_field :picture_url %>
+  <br>
 
-  <%= f.submit %>
+  <%= f.submit "Update #{@treat.name}" %>
 
 <% end %>

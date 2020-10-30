@@ -1,7 +1,9 @@
 <h1>Treats!</h1>
 
+<%= link_to "Make a New Treat", new_treat_path %>
+
 <% @treats.each do |treat| %>
-  <p><b><%= treat.name %></b></p>
-  <p><%= treat.rating %></p>
+  <p><b><%= link_to treat.name, treat_path(treat) %></b></p>
+  <p>Rated: <%= treat.rating %></p>
   <%= image_tag treat.picture_url, class: "treat-img" %>
 <% end %>

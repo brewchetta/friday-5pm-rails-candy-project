@@ -1,0 +1,9 @@
+Next time:
+
+Errors
+
+User model
+
+Login / Signup
+
+User picture id -> possible activestorage
