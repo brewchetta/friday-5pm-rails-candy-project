@@ -11,6 +11,12 @@
 
   <body>
 
+    <p>Welcome <%= current_user.name %></p>
+
+    <% if !!current_user %>
+      <%= button_to "Logout", session_path(1), method: :delete %>
+    <% end %>
+
     <%= button_to "Index", treats_path, method: :get %>
 
     <%= yield %>
