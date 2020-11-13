@@ -1,5 +1,7 @@
 <h1>Sign Up For Delicious Treats</h1>
 
+<%= @user.errors.messages %>
+
 <%= form_with model: @user do |form| %>
 
   <%= form.label :name %>

@@ -1,9 +1,7 @@
 Next time:
 
-Errors
-
-User model
-
-Login / Signup
+created association - done
 
 User picture id -> possible activestorage
+
+Errors - working - could not get to appear on signup page???

@@ -1,1 +1,5 @@
 <h1><%= @user.name %>'s Profile Page</h1>
+
+<%= image_tag @user.picture_url, class: "user_img" %>
+
+<%= button_to "Create a Treat", new_treat_path, method: :get %>
